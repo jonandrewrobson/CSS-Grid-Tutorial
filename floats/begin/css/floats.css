@@ -14,6 +14,7 @@ html {
 body {
 	font-family: Arial, Geneva, sans-serif;
 }
+
 a {
 	color: #2772B0;
 }
@@ -23,6 +24,52 @@ a {
 	margin: 0 auto;
 	float: none;
 	background-color: #fff;
+}
+
+.row {
+	background: pink;
+	margin: 20px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.row-1-4 {
+	float: left;
+	background: lavender;
+	width: 96%;
+	margin: 2%;
+}
+
+.row-2-2 {
+	float: left;
+	width: 90%;
+	background: yellowgreen;
+	margin: 10px;
+}
+
+.row-33 {
+	float: left;
+	width: 30%;
+	background: blueviolet;
+	margin: 10px;
+}
+
+.row-66 {
+	float: left;
+	width: 60%;
+	background: blueviolet;
+	margin: 10px;
+}
+
+.row-100 {
+	float: left;
+	width: 100%;
+	background: blueviolet;
+	
 }
 
 div img {
@@ -35,9 +82,15 @@ div img {
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
+	.row-1-4 {
+		width: 40%;
+	}
 
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+	.row-1-4 {
+		width: 20%;
+	}
 
 }
