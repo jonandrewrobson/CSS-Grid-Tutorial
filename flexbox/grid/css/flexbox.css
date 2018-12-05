@@ -44,10 +44,12 @@ div img {
 }
 
 .col-1-2,
-.col-1-4 {
+.col-1-4,
+.col-5-1 {
 	background: peachpuff;
 }
-.col-2 {
+.col-2,
+.col-5-2 {
 	background: lightcoral;
 }
 .col-3 {
@@ -57,10 +59,15 @@ div img {
 	background: lightskyblue;
 }
 
+.col-5-2 {
+	order: -1;
+}
+
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
 	.col-1-2,
-	.col-2 {
+	.col-2,
+	.col-5-1 {
 		flex: 0 0 44%;
 	}
 	.col-1-4,
@@ -68,15 +75,25 @@ div img {
 	.col-4 {
 		flex: 0 0 92%;
 	}
+
+	.col-5-2 {
+		order: -1;
+	}
+	.col-5-1 {
+		flex: 0 0 44%;
+	}
 }
 
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
 	.col-1-2,
-	.col-1-4 {
+	.col-1-4,
+	.col-5-1 {
 		flex: 0 0 20%;
 	}
-	.col-2 {
+	.col-2,
+	.col-5-2 {
+		order: inherit;
 		flex: 0 0 44%;
 	}
 	.col-3 {
