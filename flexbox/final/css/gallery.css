@@ -9,7 +9,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
-ul {
+.image-gallery {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -21,4 +21,15 @@ li {
 }
 img { 
   width: 100%; 
+}
+
+@media (min-width: 605px) {
+	li {
+		flex: 0 0 50%;
+	}
+}
+@media (min-width: 910px) { 
+	li {
+		flex: 0 0 33%;
+	}
 }
